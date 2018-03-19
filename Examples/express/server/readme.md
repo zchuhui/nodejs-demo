@@ -20,6 +20,9 @@ http://127.0.0.1:3000/
 ### 启动：
 
 在安装目录下启动点击`mongo.exe` 即可
+mac 下用命令：`mongo`
+
+### mongoDB 操作
 
 #### 1.1 Database
 
