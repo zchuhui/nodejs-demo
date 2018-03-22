@@ -39,13 +39,16 @@ router.get('/', function(req, res, next) {
 
   let params = {};
 
+  console.log(sort,skip,pageSize);
+
   // find 搜索数据
   // skip 跳过多少条
   // limit 每页多少条
-  let goodsModel = Goods.find(params).skip(skip).limit(pageSize);
+  let goodsModel = Goods.find(params).skip(skip);//.limit(pageSize);
+  console.log(goodsModel);
 
   // 排序
-  goodsModel.sort({'salePrice':sort});
+  //goodsModel.sort({'salePrice':sort});
 
   goodsModel.exec(function(err,doc){
       if(err){

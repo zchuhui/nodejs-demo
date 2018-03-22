@@ -7,6 +7,7 @@ var productSchema = new Schema({
     "productName":String,
     "salePrice":Number,
     "productImage":String,
+    "productUrl":String,
 });
 
 // 到处数据modal，对应数据的collection事“goods”,匹配是要用“Good”
