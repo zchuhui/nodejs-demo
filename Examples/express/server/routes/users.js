@@ -26,9 +26,10 @@ router.get('/', function(req, res, next) {
 
   let params = {};
   let usersModel = Users.find(params);
-  console.log('models',usersModel);
+  console.log('models');
 
   usersModel.exec(function(err,doc){
+    console.log('exec',err,doc);
     if(err){
       res.json({
         code:'1',
